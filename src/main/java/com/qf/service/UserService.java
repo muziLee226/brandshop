@@ -16,7 +16,7 @@ public interface UserService {
     R login(UserLoginDto userLoginDto);
 
     //修改密码
-    R updatePass(String token,String pass);
+    R updatePass(String pass,String token);
 
     //找回密码
     R findPass(UserLoginDto userLoginDto);
