@@ -52,7 +52,6 @@ public class UserController {
     @ApiOperation("注销")
     @PostMapping("api/user/loginOut")
     public R loginOut(HttpServletRequest request){
-
         return userService.loginOut(request.getHeader(SystemConstant.TOKEN_HEADER));
     }
 }
